@@ -2,5 +2,41 @@
  * Basic typography style for copy text
  */
 body {
+  @extend %font-prim;
   color: $color-primary;
+}
+
+h1 {
+  letter-spacing: 0em;
+  @include font($size: 14px, $height: 17px, $weight: 600);
+}
+
+p {
+  letter-spacing: 0em;
+  @include font($size: 10px, $height: 12px, $weight: 600);
+}
+
+span {
+  letter-spacing: 0em;
+  @include font($size: 11px, $height: 15px, $weight: 600);
+}
+
+.counts {
+  &__post {
+    * {
+      font-size: 12px;
+    }
+  }
+}
+
+.footer {
+  letter-spacing: 0em;
+  @include font($size: 14px, $height: 17px, $weight: 500);
+
+  a {
+    @include font($size: 14px, $height: 17px, $weight: 600);
+    &:hover {
+      @include font($size: 14px, $height: 17px, $weight: 700);
+    }
+  }
 }
