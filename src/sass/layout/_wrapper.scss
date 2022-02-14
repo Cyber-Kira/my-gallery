@@ -1,0 +1,13 @@
+%wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.wrapper {
+  @extend %wrapper;
+}
+
+.counts-wrapper {
+  @extend %wrapper;
+  max-width: 261px;
+}
