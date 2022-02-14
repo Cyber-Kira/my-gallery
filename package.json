@@ -1,0 +1,24 @@
+{
+  "name": "my-gallery",
+  "version": "1.0.0",
+  "description": "Gallery page",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch src/sass/main.scss src/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cyber-Kira/my-gallery"
+  },
+  "keywords": [
+    "gallery",
+    "grid"
+  ],
+  "homepage": "https://github.com/Cyber-Kira/my-gallery#readme",
+  "author": "Cyber-Kira",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.7"
+  }
+}
