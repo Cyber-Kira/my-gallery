@@ -369,10 +369,6 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  min-height: 100vh;
-}
-
 img {
   max-width: 100%;
 }
