@@ -9,34 +9,40 @@ body {
 h1 {
   letter-spacing: 0em;
   @include font($size: 14px, $height: 17px, $weight: 600);
+  @include media-tablet {
+    @include font($size: 24px, $height: 29px, $weight: 600);
+  }
 }
 
 p {
   letter-spacing: 0em;
   @include font($size: 10px, $height: 12px, $weight: 600);
-}
-
-span {
-  letter-spacing: 0em;
-  @include font($size: 11px, $height: 15px, $weight: 600);
+  @include media-tablet {
+    @include font($size: 14px, $height: 17px, $weight: 600);
+  }
 }
 
 .counts {
   &__post {
     * {
-      font-size: 12px;
+      @include font($size: 11px, $height: 15px, $weight: 600);
+    }
+    @include media-tablet {
+      &__counter {
+        @include font($size: 18px, $height: 22px, $weight: 600);
+      }
+      &__text {
+        @include font($size: 14px, $height: 17px, $weight: 600);
+      }
     }
   }
 }
 
 .footer {
   letter-spacing: 0em;
-  @include font($size: 14px, $height: 17px, $weight: 500);
+  @include font($size: 14px, $height: 17px, $weight: 600);
 
   a {
-    @include font($size: 14px, $height: 17px, $weight: 600);
-    &:hover {
-      @include font($size: 14px, $height: 17px, $weight: 700);
-    }
+    @include font($size: 14px, $height: 17px, $weight: 700);
   }
 }
