@@ -18,4 +18,13 @@
   &__text {
     color: $color-additional;
   }
+  @include media-tablet {
+    padding: 60px 0 24px;
+    &__image {
+      max-width: 156px;
+    }
+    &__title {
+      margin: 16px 0 8px;
+    }
+  }
 }

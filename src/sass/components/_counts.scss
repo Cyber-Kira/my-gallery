@@ -21,4 +21,11 @@
       color: $color-light-grey;
     }
   }
+  @include media-tablet {
+    padding-bottom: 64px;
+    &__post {
+      width: 100px;
+      height: 67px;
+    }
+  }
 }
