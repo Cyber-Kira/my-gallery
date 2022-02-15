@@ -3,6 +3,30 @@
 // -----------------------------------------------------------------------------
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-self: bottom;
   width: 100%;
-  margin: auto;
+  padding: 24px 0;
+  color: $color-footer;
+  a {
+    text-decoration: underline;
+    color: inherit;
+    padding: 0.2em;
+    border: 1px solid transparent;
+    transition: all 0.2s;
+    &:hover,
+    &:focus {
+      color: $color-primary;
+      outline: none;
+      border: 1px solid $color-footer;
+      border-radius: 3px;
+    }
+  }
+  @include media-tablet {
+    padding: 64px 0 24px;
+  }
+  @include media-laptop {
+    padding: 134px 0 24px;
+  }
 }

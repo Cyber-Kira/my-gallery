@@ -7,7 +7,21 @@
   @extend %wrapper;
 }
 
+.gallery-wrapper {
+  @extend %wrapper;
+  padding: 0 12px;
+  @include media-tablet {
+    padding: 0 24px;
+  }
+  @include media-laptop {
+    padding: 0;
+  }
+}
+
 .counts-wrapper {
   @extend %wrapper;
   max-width: 261px;
+  @include media-tablet {
+    max-width: 348px;
+  }
 }
